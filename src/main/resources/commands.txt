@@ -1,0 +1,30 @@
+COMMANDS in INTELIJ EDIT_CONFIGURATION MODE:
+------------------------------------------------------------------
+add-bank --name=Tinkoff --limit=5000
+add-card --bank=Tinkoff --card=Tinkoff-MIR
+add-current-cashback --bank=Tinkoff --card=Tinkoff-MIR --category=Restraunts --percent=5
+add-current-cashback --bank=Tinkoff --card=Tinkoff-MIR --category=House --percent=5
+add-current-cashback --bank=Tinkoff --card=Tinkoff-MIR --category=Others --percent=1 --permanent=1
+
+add-bank --name=Saint-Petersburg --limit=3000
+add-card --bank=Saint-Petersburg --card=Bank-Saint-Petersburg
+add-current-cashback --bank=Saint-Petersburg --card=Bank-Saint-Petersburg --category=Tickets --percent=7 --permanent=1
+add-current-cashback --bank=Saint-Petersburg --card=Bank-Saint-Petersburg --category=Others --percent=1.5 --permanent=1
+
+add-bank --name=Alpha --limit=2000
+add-card --bank=Alpha --card=Alpha-Credit
+add-current-cashback --bank=Alpha --card=Alpha-Credit --category=Restraunts --percent=3
+add-current-cashback --bank=Alpha --card=Alpha-Credit --category=Oil --percent=5 --permanent=1
+add-card --bank=Alpha --card=Alpha-MIR
+add-current-cashback --bank=Alpha --card=Alpha-MIR --category=Oil --percent=5
+add-current-cashback --bank=Alpha --card=Alpha-MIR --category=Tickets --percent=3
+add-current-cashback --bank=Alpha --card=Alpha-MIR --category=Others --percent=1 --permanent=1
+add-transaction --bank=Tinkoff --card=Tinkoff-MIR --category=House --value=30000000
+add-transaction --bank=Alpha --card=Alpha-MIR --category=Others --value=30000000
+card-list
+choose-card --category=Tickets --value=3500
+choose-card --category=House --value=3000000
+estimate-cashback
+
+
+
